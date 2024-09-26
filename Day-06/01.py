@@ -1,0 +1,33 @@
+'''
+TYPES OF FUNCTIONS:
+a) Built-in functions: print() -> returns 'None', input(), len(), shuffle(), int(), range(), etc......
+b) UserDefined functions
+
+TYPES OF USERDEFINED FUNCTIONS:
+1. Non-Parameterised
+Syntax: 
+def my_function_name() -> return_type(optional):
+	# Do this...
+	# Then do this...
+	# Finally do this...
+
+2. Default Parameterised
+Syntax: 
+def my_function_name(a, b:int = 1) -> return_type(optional): # or def function_name(a, b = 1) -> return_type(optional): 
+	# Do this...
+	# Then do this...
+	# Finally do this...
+
+3. Parameterised
+Syntax: 
+def my_function_name(a:int , b:int) -> return_type(optional): # or def function_name(a , b) -> return_type(optional):
+	# Do this...
+	# Then do this...
+	# Finally do this...
+
+default return type of any function is "None".
+return overwrites the return value in the memory of "function name".
+
+How to call the function? 
+	function_name(parameters (if any))
+'''

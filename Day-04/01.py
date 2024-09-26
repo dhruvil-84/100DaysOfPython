@@ -17,6 +17,10 @@ methods of random module in python: (import random)
 4. choice() :
 --> The choice() method returns a randomly selected element from the specified sequence.
 --> The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
+
+5. shuffle() :
+--> The shuffle() method takes a sequence, like a list, and reorganize the order of the items.
+--> Note: This method changes the original list, it does not return a new list.
 '''
 
 import random as r
