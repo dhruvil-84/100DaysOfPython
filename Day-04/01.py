@@ -1,10 +1,10 @@
 '''
 Randomisation:
-(Search for the doocumentation of modules in AskPython)
+(Search for the documentation of modules in AskPython)
 
 methods of random module in python: (import random)
 
-1. randint(start, end) : returns a random Integer between start and end (both inclusive). This also raises a value error if astart > end.
+1. randint(start, end) : returns a random Integer between start and end (both inclusive). This also raises a value error if start > end.
 
 2. random() : returns the random floating point number between [0.0 to 1.0)  #{0.0 is inclusive and 1.0 is Exclusive.}
 
@@ -26,7 +26,7 @@ methods of random module in python: (import random)
 import random as r
 
 test_seed = int(input("Create a seed number: "))
-r.seed(test_seed) # cannot also be done as random.seed(test_seed)
+r.seed(test_seed) # cannot be done as random.seed(test_seed)
 
 num = r.randint(0, 1)
 if(num == 1):

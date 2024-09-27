@@ -16,4 +16,12 @@ while some_condition_is_true:
 	# Do this...
 	# Then do this...
 	# Finally do this...
+ 
+Tabs or Spaces?
+    Python document says to use 4 spaces instead of 1 Tab for Indentation.
+    why so?
+    --> Spaces are the preferred indentation method.
+    --> Tabs should be used solely to remain consistent with code that is already indented with tabs.
+    --> Python disallows mixing tabs and spaces for indentation.
+
 '''

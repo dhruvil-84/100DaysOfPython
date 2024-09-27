@@ -32,7 +32,7 @@ if condition2:
 	# do this if condition2 is True. (independent of condition1)
 if condition3:
 	# do this if condition3 is True. (independent of condition1 and condition2)
-# continue statements. these after statements will run as usually.
+# continue statements. these "after statements" will run as usually.
 
 #------------------------------------------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ if condition:
 	# do this if condition is True.
 else:
 	# do this if condition is False.
-# continue statements. these after statements will run as usually.
+# continue statements. these "after statements"" will run as usually.
 
 NOTE: Give indentation bcoz it defines the block scope of the respective statements.
 

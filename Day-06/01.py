@@ -26,7 +26,7 @@ def my_function_name(a:int , b:int) -> return_type(optional): # or def function_
 	# Finally do this...
 
 default return type of any function is "None".
-return overwrites the return value in the memory of "function name".
+return overwrites the return value in the memory location of "function name".
 
 How to call the function? 
 	function_name(parameters (if any))

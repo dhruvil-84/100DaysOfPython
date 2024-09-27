@@ -14,9 +14,10 @@ for n in range(0, len(student_heights)):
 	student_heights[n] = int(student_heights[n])
 
 count = 0
-sum = 0
+sumh = 0
 for height in student_heights:
 	count += 1
-	sum += height
-print(round(sum / count))
-
+	sumh += height
+print(round(sumh / count))
+# or
+print(round(sum(student_heights) / len(student_heights)))
