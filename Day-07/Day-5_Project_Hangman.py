@@ -16,7 +16,7 @@ for i in chosen_word:
 life = len(stages) - 1
 
 while ((life != 0) and (exit != 0)):
-    guess = input("\nGuess a letter: ").lower()
+    guess = input("\nGuess a letter: ").strip().lower()
     if guess in chosen_word:
         for i in range(0, len(chosen_word)):
             if guess == chosen_word[i]:
