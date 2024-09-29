@@ -1,4 +1,5 @@
 #------------------------------------------------------- SHORT METHOD -----------------------------------------------------------------------
+from replit import clear
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
@@ -47,6 +48,7 @@ while iscontinue.lower() == 'yes':
     else:
         print(f"\nShift cannot be {shift}")
     iscontinue = input("\nType 'yes' if you want to go again. Otherwise type 'no'.\n").strip().lower()
+    clear()
 
 #------------------------------------------------------- SHORT METHOD -----------------------------------------------------------------------
 
