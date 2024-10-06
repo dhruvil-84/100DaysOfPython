@@ -39,13 +39,18 @@ def generate_report():
     print(f"Money: ${resources["money"]}\n")
 
 def check(ingredients):
+    can_make = True
     for item in ingredients:
         if resources[item] < ingredients[item]:
-            print(f"Sorry there is not enough {item}.\n")
-            return False
+            print(f"Sorry there is not enough {item}.")
+            can_make = False
+    if can_make == False:
+        print("")
+    return can_make
+
+def deduct(ingredients):
     for item in ingredients:
         resources[item] -= ingredients[item]
-    return True
 
 def money_section(cost):
     print("Please insert coins.")
@@ -71,8 +76,10 @@ while is_machine_on:
         if check(MENU[choice]["ingredients"]):
             val = money_section(cost = MENU[choice]["cost"])
             if val > 0:
+                deduct(MENU[choice]["ingredients"])
                 print(f"Here is ${val} in change.\nHere is your {choice} coffee. Enjoy!\n")
             elif val == 0:
+                deduct(MENU[choice]["ingredients"])
                 print(f"Here is your {choice} coffee. Enjoy!\n")
             else:
                 print("Sorry that's not enough money. Money refunded.\n")
