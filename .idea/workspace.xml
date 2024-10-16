@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="369ade2b-1fa6-406c-9290-8513622900b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-22_Project_ThePongGame/ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-22_Project_ThePongGame/ball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-22_Project_ThePongGame/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-22_Project_ThePongGame/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-22_Project_ThePongGame/paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-22_Project_ThePongGame/paddle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-22_Project_ThePongGame/partition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day-22_Project_ThePongGame/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day-22_Project_ThePongGame/score.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,7 @@
     "Python.main (2).executor": "Run",
     "Python.main (3).executor": "Run",
     "Python.main.executor": "Run",
+    "Python.partition.executor": "Run",
     "Python.question_model.executor": "Run",
     "Python.score (1).executor": "Run",
     "Python.score.executor": "Run",
@@ -54,6 +60,28 @@
   }
 }]]></component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UDEMY" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-22_Project_ThePongGame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-22_Project_ThePongGame/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UDEMY" />
       <option name="ENV_FILES" value="" />
@@ -98,6 +126,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="partition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UDEMY" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-22_Project_ThePongGame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-22_Project_ThePongGame/partition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="score (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UDEMY" />
       <option name="ENV_FILES" value="" />
@@ -120,57 +170,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="score" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="UDEMY" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game/score.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="snake" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="UDEMY" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day-21_Project_SnakeGame_Complete/Snake Game/snake.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
         <item itemvalue="Python.score (1)" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.partition" />
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.snake" />
-        <item itemvalue="Python.score" />
       </list>
     </recent_temporary>
   </component>

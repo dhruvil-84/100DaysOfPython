@@ -15,7 +15,7 @@ def set_screen():
     screen.title("Apple Snake")
     screen.tracer(0) # turning tracer method off (i.e. setting it 0). Turn turtle(snake_body) animation off.
 
-def SnakeGame():
+def snakegame():
     """This is the function of main snake game. It can be recursive based on play again or not."""
     screen.resetscreen()
     set_screen()
@@ -53,6 +53,6 @@ def SnakeGame():
                 score.game_over()
                 # if you make a replay option and the return value of game over is true then call the SnakeGame() function otherwise game = false.
                 game = False
-SnakeGame()
+snakegame()
 
 screen.exitonclick()
