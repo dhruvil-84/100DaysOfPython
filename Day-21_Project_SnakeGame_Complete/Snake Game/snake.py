@@ -28,7 +28,7 @@ class Snake:
         self.rapid_direction_change_permission = True
 
     def create_snake(self):
-        """just creates the initial snake of 3 segments"""
+        """just creates the initial snake of three segments"""
         for position in STARTING_POSITION:
             self.add_body(position)
 
@@ -52,25 +52,25 @@ class Snake:
         self.snake_head.forward(MOVE_DISTANCE)
 
     def move_up(self):
-        """snake moves up when user hits Up arrow key"""
+        """the snake moves up when a user hits an Up arrow key"""
         if self.rapid_direction_change_permission and self.snake_head.heading() != DOWN:
             self.snake_head.setheading(UP)
             self.rapid_direction_change_permission = False
 
     def move_down(self):
-        """snake moves down when user hits Down arrow key"""
+        """the snake moves down when a user hits a Down arrow key"""
         if self.rapid_direction_change_permission and self.snake_head.heading() != UP:
             self.snake_head.setheading(DOWN)
             self.rapid_direction_change_permission = False
 
     def move_right(self):
-        """snake moves right when user hits Right arrow key"""
+        """the snake moves right when a user hits a Right arrow key"""
         if self.rapid_direction_change_permission and self.snake_head.heading() != LEFT:
             self.snake_head.setheading(RIGHT)
             self.rapid_direction_change_permission = False
 
     def move_left(self):
-        """snake moves left when user hits Left arrow key"""
+        """the snake moves left when a user hits a Left arrow key"""
         if self.rapid_direction_change_permission and self.snake_head.heading() != RIGHT:
             self.snake_head.setheading(LEFT)
             self.rapid_direction_change_permission = False

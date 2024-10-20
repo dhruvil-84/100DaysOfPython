@@ -24,7 +24,7 @@ class Ball(Turtle):
         self.y_move *= -1
 
     def reflect(self, paddle):
-        """reflects the ball when collided with either of the paddle"""
+        """reflects the ball when collided with either of the paddles"""
         self.x_move *= -1
         self.increase_speed()
         # Calculate the difference in y-coordinates between the ball and the paddle
@@ -42,12 +42,12 @@ class Ball(Turtle):
             self.setx(self.xcor() - 10)
 
     def movement(self):
-        """sets the direction of movement either in any of one quadrant"""
+        """sets the direction of movement in any of one quadrant"""
         self.x_move = random.choice((10, -10))
         self.y_move = random.choice((10, -10))
 
     def increase_speed(self):
-        """increases the speed of the ball every time when ball hits the paddle"""
+        """increases the speed of the ball every time when the ball hits the paddle"""
         if self.timer > 0.03:
             self.timer -= 0.01
 

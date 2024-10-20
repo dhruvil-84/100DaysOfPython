@@ -9,13 +9,13 @@ screen = turtle.Screen()
 def set_screen():
     """Setting the screen / canvas for the game"""
     screen.setup(width=1000, height=660) # Setting the screen of dimensions 1000 x 660.
-    screen.bgcolor("Black") # Setting the background colour of the screen to black.
+    screen.bgcolor("Black") # Setting the background color of the screen to black.
     screen.bgpic("pong_game_field.png") # Creating a field image for the pong game.
     screen.title("Pong")
-    screen.tracer(0) # turning tracer method off (i.e. setting it 0). Turn turtle(snake_body) animation off.
+    screen.tracer(0) # Turning tracer method off (i.e., setting it 0). Turn turtle(snake_body) animation off.
 
 def pong():
-    """This is the function of main pong game. It can be recursive based on play again or not."""
+    """This is the function of the main pong game. It can be recursive based on play again or not."""
     screen.resetscreen()
     set_screen()
     left_paddle = Paddle(position=(-450, 0), colour="Cyan")
@@ -29,7 +29,7 @@ def pong():
     player2 = Scoreboard(player_name=player2_name, x_units=250, y_units=300, colour="Magenta")
     ball = Ball()
 
-    # actions to be performed after the responses taken from the user through keyboard.
+    # actions to be performed after the responses taken from the user through the keyboard.
     screen.onkeypress(key="Up", fun=right_paddle.move_up)
     screen.onkeypress(key="Down", fun=right_paddle.move_down)
     screen.onkeypress(key="w", fun=left_paddle.move_up)
@@ -37,7 +37,7 @@ def pong():
 
     while player1.score != 5 and player2.score != 5:
         time.sleep(ball.timer) # Adding Delay so I can see the ball moving.
-        screen.update() # updating the screen only after ball moves (i.e. not showing the animation of ball moving)
+        screen.update() # updating the screen only after ball moves (i.e., not showing the animation of ball moving)
         if ball.x_move == 10:
             right_paddle.can_move()
         else:
@@ -48,23 +48,23 @@ def pong():
         if ball.ycor() <= -280 or ball.ycor() >= 280:
             ball.bounce()
 
-        # Detect collision of ball with Left paddle.
+        # Detect collision of ball with the Left paddle.
         if ball.distance(left_paddle) <= 50 and -430 >= ball.xcor() >= -450:
             ball.reflect(left_paddle)
             left_paddle.cant_move()
 
-        # Detect collision of ball with Right paddle.
+        # Detect collision of ball with the Right paddle.
         if ball.distance(right_paddle) <= 50 and 430 <= ball.xcor() <= 450:
             ball.reflect(right_paddle)
             right_paddle.cant_move()
 
-        # Detect if ball does not hit the right paddle.
+        # Detect if the ball does not hit the right paddle.
         if ball.xcor() > 470:
             ball.reset_position()
             right_paddle.cant_move()
             player1.increase_score()
 
-        # Detect if ball does not hit the left paddle.
+        # Detect if the ball does not hit the left paddle.
         if ball.xcor() < -470:
             ball.reset_position()
             left_paddle.cant_move()
@@ -75,7 +75,7 @@ def pong():
         player1.winner()
     else:
         player2.winner()
-    # if you make a play again option then call the pong() function otherwise do nothing.
+    # if you make a play again option, then call the pong() function otherwise do nothing.
 
 pong()
 screen.exitonclick()

@@ -22,7 +22,7 @@ class Scoreboard(Turtle):
         self.write(f"{self.name}'s Score: {self.score}", align=ALIGNMENT, font=FONT1)
 
     def increase_score(self):
-        """increases the player's current score by 1 when opponent misses to  hit the ball"""
+        """increases the player's current score by 1 when an opponent misses to hit the ball"""
         self.score += 1
         self.clear()
         self.print_score()

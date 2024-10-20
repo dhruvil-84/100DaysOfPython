@@ -16,13 +16,13 @@ class Score(Turtle):
         self.hideturtle()
 
     def increase_score(self):
-        """increases the current score by 1 when snake consumes an apple"""
+        """increases the current score by 1 when a snake consumes an apple"""
         self.score += 1
         self.clear()
         self.print_score(score = self.score)
 
     def game_over(self):
-        """prints game over on the screen if snake collides with its body or on the wall"""
+        """prints game over on the screen if a snake collides with its body or on the wall"""
         self.goto(x = 0, y = 0)
         self.color("Black")
         self.write(f"Game Over", align = ALIGNMENT, font = ('Courier', 17, 'bold'))
