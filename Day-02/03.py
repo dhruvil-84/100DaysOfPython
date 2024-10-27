@@ -1,5 +1,4 @@
 '''
-
 round() function: round off the number to nearest decimal places.
 
 print(round(8/3, 2))  		# 2.67
